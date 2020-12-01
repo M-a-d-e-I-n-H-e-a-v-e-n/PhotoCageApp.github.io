@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    margin-top: 4px;
+    background: black;
+    height: 112px;
+}
+
+.logo {
+    font-size: 21px;
+    float: left;
+    color: #FF7700;
+    margin-left: 12%;
+    margin-top: 36px;
+}
+
+.logo a {
+    color: #666565;
+}
+
+.menu {
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 66px 3% 22px 3%;
+    display: inline-block;
+    border-right: 1px;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #434343;
+    text-align: center;
+
+}
+
+
+.menu a:hover {
+    border-bottom: 3px solid #FF7D00;
+
+}
+
+.sidebar {
+
+}
+
+h2 {
+    margin-top: 42px;
+    margin-left: 25%;
+}
+
+form {
+    margin-left: 25%;
+    margin-top: 32px;
+    border-radius: 5px;
+    vertical-align: middle;
+    width: 35%;
+    height: 46px;
+    background-color: #DC6C00;
+    display: inline-block;
+    text-align: right;
+}
+
+input {
+    display: inline-block;
+    outline: none;
+    display: none;
+}
+
+label[for="upload"] {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 5px;
+    margin-right: 10px;
+    text-align: center;
+    width: 94px;
+    display: inline-block;
+    font-size: 18px;
+    background: #693300;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+label:hover {
+    background: #2d2d2d;
+}
+
+button {
+    margin-top: 32px;
+    margin-left: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 48px;
+    width: 180px;
+    font-size: 18px;
+    border: none;
+    background: black;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+.content {
+    margin-top: 32px;
+}
+
+.img {
+    margin: 0 150px 0 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-column-gap: 50px;
+    row-gap: 50px;
+    margin: 0 50px;
+    justify-content: center;
+}
+
+.img img {
+    width: 200px;
+    height: 200px;
+}
+
+.footer {
+    text-align: right;
+    margin: 72px 10% 54px 0;
+}
+
+
+@media screen and (max-width:768px) {
+    
+    .header {
+    }
+    
+    .logo {
+        font-size: 14px;
+        margin-left: 3%;
+    }
+
+    li {
+        padding: 66px 2% 22px 2%;
+    }
+
+    h2 {
+        margin-left: 5%;
+    }
+
+    form {
+        margin-left: 5%;
+    }
+}@media screen and (min-width:1050px) {
+
+    .img {
+        grid-template-columns: repeat(4, 200px);
+    }
+
+}
